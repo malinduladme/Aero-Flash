@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "author": "SmartCam",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 20,
+      "left": 290,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "flash",
+      "top": 10,
+      "left": 400,
+      "attrs": { "color": "white", "label": "flash" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "batt",
+      "top": 200,
+      "left": 60,
+      "attrs": { "label": "battery" }
+    }
+  ],
+  "connections": [
+    [ "esp:D26", "r1:1", "blue", [] ],
+    [ "r1:2", "flash:A", "green", [] ],
+    [ "flash:C", "esp:GND.2", "black", [] ],
+
+    [ "batt:VCC", "esp:3V3", "red", [] ],
+    [ "batt:GND", "esp:GND.1", "black", [] ],
+    [ "batt:SIG", "esp:D34", "purple", [] ]
+  ]
+}

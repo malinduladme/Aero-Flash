@@ -1,0 +1,78 @@
+{
+  "protocol_version": 1,
+  "note": "Canonical frame/bytes contract. Little-endian. Header: ver(1) op(1) seq(2). Both the C firmware codec and the TypeScript app codec are tested against this file.",
+  "vectors": [
+    {
+      "name": "sync_req",
+      "direction": "app_to_device",
+      "frame": { "op": "SYNC_REQ", "seq": 1 },
+      "bytes": "01 01 01 00"
+    },
+    {
+      "name": "fire_at",
+      "direction": "app_to_device",
+      "frame": { "op": "FIRE_AT", "seq": 258, "t_fire_us": 4886718345, "duration_ms": 300, "brightness": 255 },
+      "bytes": "01 02 02 01 89 67 45 23 01 00 00 00 2c 01 ff"
+    },
+    {
+      "name": "fire_now",
+      "direction": "app_to_device",
+      "frame": { "op": "FIRE_NOW", "seq": 7, "duration_ms": 300, "brightness": 128 },
+      "bytes": "01 03 07 00 2c 01 80"
+    },
+    {
+      "name": "cancel",
+      "direction": "app_to_device",
+      "frame": { "op": "CANCEL", "seq": 9 },
+      "bytes": "01 04 09 00"
+    },
+    {
+      "name": "get_status",
+      "direction": "app_to_device",
+      "frame": { "op": "GET_STATUS", "seq": 10 },
+      "bytes": "01 05 0a 00"
+    },
+    {
+      "name": "set_config",
+      "direction": "app_to_device",
+      "frame": { "op": "SET_CONFIG", "seq": 11, "default_duration_ms": 300, "brightness": 200 },
+      "bytes": "01 06 0b 00 2c 01 c8"
+    },
+    {
+      "name": "set_mode_wifi",
+      "direction": "app_to_device",
+      "frame": { "op": "SET_MODE", "seq": 12, "mode": 1 },
+      "bytes": "01 07 0c 00 01"
+    },
+    {
+      "name": "sync_resp",
+      "direction": "device_to_app",
+      "frame": { "op": "SYNC_RESP", "seq": 1, "t_dev_us": 4886718345, "session_id": 3735928559 },
+      "bytes": "01 81 01 00 89 67 45 23 01 00 00 00 ef be ad de"
+    },
+    {
+      "name": "fire_ack_ok",
+      "direction": "device_to_app",
+      "frame": { "op": "FIRE_ACK", "seq": 258, "t_actual_us": 4886718345, "session_id": 3735928559, "flags": 0 },
+      "bytes": "01 82 02 01 89 67 45 23 01 00 00 00 ef be ad de 00"
+    },
+    {
+      "name": "fire_ack_late",
+      "direction": "device_to_app",
+      "frame": { "op": "FIRE_ACK", "seq": 259, "t_actual_us": 4886718345, "session_id": 3735928559, "flags": 1 },
+      "bytes": "01 82 03 01 89 67 45 23 01 00 00 00 ef be ad de 01"
+    },
+    {
+      "name": "status",
+      "direction": "device_to_app",
+      "frame": { "op": "STATUS", "seq": 10, "mode": 0, "session_id": 3735928559, "battery_mv": 3900, "flags": 0, "uptime_s": 42, "fw_ver": 1 },
+      "bytes": "01 83 0a 00 00 ef be ad de 3c 0f 00 2a 00 00 00 01"
+    },
+    {
+      "name": "error_bad_opcode",
+      "direction": "device_to_app",
+      "frame": { "op": "ERROR", "seq": 13, "code": 3 },
+      "bytes": "01 84 0d 00 03"
+    }
+  ]
+}

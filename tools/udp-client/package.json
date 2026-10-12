@@ -1,0 +1,7 @@
+{
+  "name": "smartcam-udp-client",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "bin": { "smartcam": "client.js" }
+}

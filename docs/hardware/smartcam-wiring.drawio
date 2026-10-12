@@ -1,0 +1,247 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="Wiring — follow this" id="wiring">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="SmartCam Flasher — wiring" style="text;html=1;fontSize=26;fontStyle=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="24" width="600" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" value="Pad names are exactly as printed on your boards. Ten connections total. Red = positive, black = ground/return, blue = logic signal." style="text;html=1;fontSize=13;align=left;verticalAlign=top;fontColor=#666666;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="62" width="900" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cell" value="18650 cell&#10;in holder" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#333333;strokeWidth=2;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cellp" value="+ (red)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="124" y="356" width="60" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="celln" value="− (black)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="124" y="394" width="60" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tp" value="TP4056&#10;charge + protect" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="270" y="290" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tpbp" value="B+" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="278" y="356" width="56" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tpbn" value="B−" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="278" y="394" width="56" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tpop" value="OUT+" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="316" width="62" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tpon" value="OUT−" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="354" width="62" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mt" value="MT3608 boost&#10;set voltage FIRST" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="290" width="200" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="mtip" value="VIN+" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="568" y="316" width="62" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mtin" value="VIN−" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="568" y="354" width="62" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mtop" value="VOUT+" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="686" y="420" width="68" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mton" value="VOUT−" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="686" y="458" width="68" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mos" value="MOS Module  (red board, &quot;MH&quot;)&#10;FDP047AN08A0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="880" y="150" width="310" height="440" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lblload" value="UPPER SCREW — load out" style="text;html=1;fontSize=11;fontStyle=1;fontColor=#B85450;align=left;" vertex="1" parent="1">
+          <mxGeometry x="896" y="210" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mosvp" value="V+" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1104" y="234" width="72" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mosvn" value="V−" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1104" y="272" width="72" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lblsup" value="LOWER SCREW — supply in" style="text;html=1;fontSize=11;fontStyle=1;fontColor=#B85450;align=left;" vertex="1" parent="1">
+          <mxGeometry x="896" y="336" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mosvin" value="VIN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="894" y="360" width="72" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mosgnds" value="GND" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="894" y="398" width="72" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lblhdr" value="3-PIN HEADER — logic" style="text;html=1;fontSize=11;fontStyle=1;fontColor=#B85450;align=left;" vertex="1" parent="1">
+          <mxGeometry x="896" y="466" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mossig" value="SIG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="894" y="490" width="72" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mosvcc" value="VCC   ○ leave open" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;dashed=1;fontSize=11;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="978" y="490" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mosgndh" value="GND" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="894" y="528" width="72" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="led" value="4 × LED array&#10;ON A HEATSINK" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="170" width="190" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ledp" value="anode +" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1318" y="234" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ledn" value="cathode −" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1318" y="272" width="80" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="esp" value="ESP32 DevKit V1&#10;USB-powered at the bench" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="640" width="270" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="espd26" value="D26" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="700" y="686" width="62" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="espgnd" value="GND" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="700" y="724" width="62" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="espd34" value="D34" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="700" y="762" width="62" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cap" value="470–1000 µF&#10;across VOUT+ / VOUT−&#10;(optional, watch polarity)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;dashed=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="530" y="540" width="170" height="64" as="geometry" />
+        </mxCell>
+
+        <mxCell id="w1" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#CC0000;strokeWidth=3;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="cellp" target="tpbp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w2" value="2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=3;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="celln" target="tpbn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w3" value="3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#CC0000;strokeWidth=3;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="tpop" target="mtip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w4" value="4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=3;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="tpon" target="mtin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5" value="5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#CC0000;strokeWidth=4;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="mtop" target="mosvin">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="433" />
+              <mxPoint x="810" y="373" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w6" value="6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=4;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="mton" target="mosgnds">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="471" />
+              <mxPoint x="840" y="411" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w7" value="7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#CC0000;strokeWidth=4;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="mosvp" target="ledp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w8" value="8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=4;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="mosvn" target="ledn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w9" value="9   gate drive" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0066CC;strokeWidth=3;endArrow=block;fontSize=13;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="espd26" target="mossig">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="699" />
+              <mxPoint x="830" y="503" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w10" value="10   common ground" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=3;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="espgnd" target="mosgndh">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="737" />
+              <mxPoint x="800" y="541" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wc1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#D79B00;strokeWidth=2;dashed=1;endArrow=none;" edge="1" parent="1" source="cap" target="mtop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wc2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#D79B00;strokeWidth=2;dashed=1;endArrow=none;" edge="1" parent="1" source="cap" target="mton">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="how" value="&lt;b&gt;How this module works&lt;/b&gt;&#10;VIN passes straight through to V+.&#10;V− is the MOSFET drain, GND is its source.&#10;So the LED sits BETWEEN V+ and V−, and the&#10;MOSFET switches its low side on and off.&#10;&#10;All the heavy current stays in the screw&#10;terminals. The 3-pin header carries only&#10;the gate signal and its ground reference." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#B85450;align=left;verticalAlign=top;spacing=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="400" width="300" height="190" as="geometry" />
+        </mxCell>
+
+        <mxCell id="order" value="&lt;b&gt;Wire in this order&lt;/b&gt;&#10;1–2  cell to TP4056        → check OUT+ reads 3.0–4.2 V&#10;3–4  TP4056 to MT3608&#10;5–6  MT3608 to MOS supply  → SET VOLTAGE NOW, no LED yet&#10;7–8  MOS to LED array&#10;9–10 ESP32 to MOS header   → touch SIG to 3V3: LEDs full on" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F9F5;strokeColor=#82B366;align=left;verticalAlign=top;spacing=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="620" width="420" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend" value="&lt;b&gt;Colours&lt;/b&gt;   red = positive · black = ground/return · blue = logic signal · dashed grey ○ = leave unconnected" style="text;html=1;fontSize=12;align=left;fontColor=#666666;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="800" width="820" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram name="Battery divider (optional)" id="divider">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="d0" />
+        <mxCell id="d1" parent="d0" />
+
+        <mxCell id="dt" value="Battery sense divider — optional" style="text;html=1;fontSize=24;fontStyle=1;align=left;" vertex="1" parent="d1">
+          <mxGeometry x="40" y="30" width="600" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="ds" value="Skip this and you lose only battery reporting; everything else works. D34 is on ADC1, which matters — ADC2 is claimed by the WiFi driver, so a divider on an ADC2 pin reads fine in BLE mode and fails silently in WiFi mode." style="text;html=1;fontSize=13;align=left;verticalAlign=top;fontColor=#666666;whiteSpace=wrap;" vertex="1" parent="d1">
+          <mxGeometry x="40" y="66" width="760" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="src" value="TP4056  OUT+" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="d1">
+          <mxGeometry x="60" y="190" width="170" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" value="R1   100 kΩ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2;fontSize=14;" vertex="1" parent="d1">
+          <mxGeometry x="330" y="190" width="130" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="mid" value="midpoint" style="ellipse;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#000000;fontColor=#ffffff;fontSize=12;" vertex="1" parent="d1">
+          <mxGeometry x="550" y="190" width="100" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="adc" value="ESP32  D34" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=14;fontStyle=1" vertex="1" parent="d1">
+          <mxGeometry x="760" y="190" width="150" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="R2   100 kΩ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2;fontSize=14;" vertex="1" parent="d1">
+          <mxGeometry x="535" y="340" width="130" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="dg" value="MOS Module  GND&#10;(3-pin header)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#333333;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="d1">
+          <mxGeometry x="520" y="480" width="160" height="54" as="geometry" />
+        </mxCell>
+
+        <mxCell id="de1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#CC0000;strokeWidth=3;endArrow=none;" edge="1" parent="d1" source="src" target="r1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=3;endArrow=none;" edge="1" parent="d1" source="r1" target="mid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#9673A6;strokeWidth=3;endArrow=block;" edge="1" parent="d1" source="mid" target="adc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=3;endArrow=none;" edge="1" parent="d1" source="mid" target="r2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=3;endArrow=none;" edge="1" parent="d1" source="r2" target="dg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dn" value="Any matched pair works — 10 k, 47 k or 100 k. Higher values draw less current from the cell." style="text;html=1;fontSize=13;align=left;verticalAlign=top;fontColor=#666666;whiteSpace=wrap;" vertex="1" parent="d1">
+          <mxGeometry x="760" y="340" width="280" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
